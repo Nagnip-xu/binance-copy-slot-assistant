@@ -1,0 +1,24 @@
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+requirements.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# Preserve CRLF bytes and the bootstrap BOM in clones and downloaded ZIP archives.
+*.cmd -text
+*.bat -text
+bootstrap_python.ps1 -text
+
+*.png binary
+*.exe binary
+*.dll binary
+*.pyd binary
+*.zip binary
+*.cat binary
+*.lib binary
+
+# Keep bundled third-party runtime files byte-for-byte intact.
+py/** -text

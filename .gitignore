@@ -1,0 +1,36 @@
+# Local settings, credentials and browser profiles
+/config.json
+/config.json.tmp
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+/profile_*/
+/BinanceCopySlotIndependent/
+/py/profile_*/
+/py/BinanceCopySlotIndependent/
+
+# Personal machine assessment, logs and diagnostic artifacts
+/云端持续运行可行性评估.md
+*.log
+*.log.*
+*.dmp
+
+# Python caches and development environments
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp

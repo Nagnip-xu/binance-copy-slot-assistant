@@ -1,0 +1,13 @@
+{
+  "trader_id": "",
+  "trader_name": "",
+  "amount": 300.0,
+  "rate_limit": 11,
+  "browser": "edge",
+  "browser_exe": "",
+  "cdp_port": 9222,
+  "auto_start": false,
+  "direct_submit": false,
+  "refresh_enabled": true,
+  "refresh_minutes": 45
+}
