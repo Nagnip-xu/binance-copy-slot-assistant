@@ -34,3 +34,7 @@ venv/
 Thumbs.db
 desktop.ini
 *.tmp
+
+# Local design exploration and review artifacts
+/.impeccable/
+/.gemini/

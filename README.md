@@ -9,7 +9,9 @@
 ![Interface](https://img.shields.io/badge/界面-中文_Tkinter-5B5FC7?style=flat-square)
 ![Mode](https://img.shields.io/badge/首次运行-真实提交_OFF-238636?style=flat-square)
 
-[界面预览](#界面预览) · [快速开始](#快速开始) · [按钮说明](#按钮说明) · [配置说明](#配置说明) · [常见问题](#常见问题)
+[![Website](https://img.shields.io/badge/访问官网-GitHub_Pages-3d5fe0?style=for-the-badge&logo=github&logoColor=white)](https://nagnip-xu.github.io/binance-copy-slot-assistant/)
+
+[官网与在线预览](#官网与在线预览) · [界面预览](#界面预览) · [快速开始](#快速开始) · [按钮说明](#按钮说明) · [配置说明](#配置说明) · [常见问题](#常见问题)
 
 </div>
 
@@ -18,6 +20,16 @@
 
 > [!WARNING]
 > 开启「真实提交」会使用浏览器中登录的账户发起真实跟单申请，可能转入 USDT 并产生合约风险。项目不保证取得名额或获得收益。页面入口、内部接口和登录状态均可能变化，请先阅读[使用前须知](#使用前须知)。
+
+## 官网与在线预览
+
+**官网地址：[https://nagnip-xu.github.io/binance-copy-slot-assistant/](https://nagnip-xu.github.io/binance-copy-slot-assistant/)**
+
+无需下载或安装，在浏览器中即可查看个人作品介绍、两张真实软件截图和交互流程演示。官网支持电脑和手机浏览，可切换、放大截图，点击流程节点或播放完整流程，也可直接下载完整 Windows 项目。
+
+[![官网预览：冷白与钴蓝配色的个人作品首页](docs/images/website-preview.webp)](https://nagnip-xu.github.io/binance-copy-slot-assistant/)
+
+官网是静态作品展示页；实际监控和提交任务仍需下载项目，在 Windows 上双击 `START.cmd` 运行。官网演示中的「每秒10次」为示意参数，桌面软件实际人数读取约每分钟一次，与可设置的提交速率相互独立。
 
 ## 项目介绍
 
@@ -237,7 +249,11 @@ binance-copy-slot-assistant/
 ├── requirements.txt           # 系统 Python 所需外部依赖
 ├── self_test.py               # 离线自检
 ├── 使用说明.md                # 简明操作说明
-├── docs/images/               # README 界面截图
+├── website/                   # 官网 HTML、CSS、交互脚本与静态资源
+├── .github/workflows/         # GitHub Pages 自动部署
+├── DESIGN.md                  # 官网设计规范
+├── PRODUCT.md                 # 官网定位与功能边界
+├── docs/images/               # README 中的软件与官网截图
 └── py/                        # Windows x64 便携运行库
 ```
 
@@ -265,6 +281,27 @@ python launcher.py
 
 Tkinter 通常由 Python 安装程序的 Tcl/Tk 选项提供。Windows 浏览器与启动管理仍是当前项目的依赖，Linux / macOS 尚未适配。
 
+## 官网部署与维护
+
+官网由 **GitHub Pages 免费托管**，源码在 [`website/`](website/)，自动部署配置在 [`.github/workflows/deploy-pages.yml`](.github/workflows/deploy-pages.yml)。页面使用纯 HTML、CSS 和 JavaScript，图片和字体随站点提供，无需后台或构建工具。
+
+| 操作 | 方法 |
+| --- | --- |
+| 访问官网 | 打开 [GitHub Pages 官网](https://nagnip-xu.github.io/binance-copy-slot-assistant/) |
+| 修改内容或交互 | 编辑 `website/index.html`、`website/styles.css`、`website/script.js` |
+| 本地预览 | 在项目根目录运行下面的命令，再打开 `http://127.0.0.1:4173/` |
+| 自动更新官网 | 将 `website/` 或部署工作流的变更推送到 `main`，GitHub Actions 自动发布 |
+| 查看部署结果 | 打开 [部署记录](https://github.com/Nagnip-xu/binance-copy-slot-assistant/actions/workflows/deploy-pages.yml) |
+| 手动重新发布 | 在上述 Actions 页面选择 **Run workflow → main → Run workflow** |
+
+```powershell
+.\py\python.exe -I -B -m http.server 4173 --bind 127.0.0.1 --directory website
+```
+
+GitHub 仓库的 **Settings → Pages → Source** 使用 **GitHub Actions**。部署产物仅包含 `website/`，不包含桌面程序、Python 运行库或本地配置。GitHub Pages 托管官网，不执行 Windows 桌面任务。只修改 README 等项目说明时不会触发官网部署。
+
+更多资源说明和检查范围见 [`website/README.md`](website/README.md)。
+
 ## 云端运行
 
 现有版本可以部署到**带图形桌面的 Windows 云服务器或云电脑**，将完整目录复制过去，安装浏览器并重新登录。断开远程桌面后能否保留运行，取决于会话与注销策略。
@@ -285,7 +322,7 @@ Tkinter 通常由 Python 安装程序的 Tcl/Tk 选项提供。Windows 浏览器
 
 <div align="center">
 
-维护者：[Nagnip-xu](https://github.com/Nagnip-xu) · [反馈问题](https://github.com/Nagnip-xu/binance-copy-slot-assistant/issues)
+维护者：[Nagnip-xu](https://github.com/Nagnip-xu) · [访问官网](https://nagnip-xu.github.io/binance-copy-slot-assistant/) · [反馈问题](https://github.com/Nagnip-xu/binance-copy-slot-assistant/issues)
 
 提交问题时，请描述系统、浏览器、操作步骤与错误文本，并先隐藏账户资料和敏感日志。
 

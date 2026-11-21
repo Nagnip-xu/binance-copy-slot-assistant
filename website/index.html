@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f5f7">
+  <meta name="description" content="Nagnip-xu 的个人开发作品：币安跟单抢位助手。探索真实界面、桌面与浏览器协作机制，以及 Windows 启动方法。">
+  <title>币安跟单抢位助手 — Nagnip-xu 的开发作品</title>
+  <link rel="canonical" href="https://nagnip-xu.github.io/binance-copy-slot-assistant/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preload" href="assets/fonts/showcase-sc.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M15 8V4H4v11h4"/></symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5"/></symbol>
+    <symbol id="i-screen" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol>
+    <symbol id="i-browser" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M7 6.5h.01m3 0h.01"/></symbol>
+    <symbol id="i-watch" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 7 3 9H3c0-2 3-2 3-9Zm4 13h4"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m9 5 10 7-10 7V5Z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#" aria-label="Nagnip-xu 作品首页"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 28V12h11v16h13V12"/><circle cx="8" cy="28" r="3"/><circle cx="32" cy="12" r="3"/></svg><span>Nagnip<span class="brand-tail"> / works</span></span></a>
+      <nav class="desktop-nav" aria-label="主导航"><a href="#showcase">作品界面</a><a href="#mechanism">运行机制</a><a href="#start">开始使用</a></nav>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="打开导航"><span></span><span></span></button>
+    </div>
+    <a class="header-source" href="https://github.com/Nagnip-xu/binance-copy-slot-assistant" target="_blank" rel="noopener noreferrer">GitHub 源码<svg class="icon"><use href="#i-external"/></svg></a>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="移动导航" hidden><a href="#showcase">作品界面</a><a href="#mechanism">运行机制</a><a href="#start">开始使用</a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <h1 id="hero-title">把重复的等待，<br>交给一个窗口。</h1>
+        <p class="hero-project">币安跟单抢位助手<span> · 独立版</span></p>
+        <p class="hero-description">一个把页面监控、人数提醒与提交控制<br class="desktop-break">放在一起的 Windows 桌面自动化作品。</p>
+        <a class="button button-white" href="#showcase">探索这件作品<span class="button-orb"><svg class="icon"><use href="#i-arrow"/></svg></span></a>
+        <div class="hero-credit"><span class="credit-line"></span><span>由 <a href="https://github.com/Nagnip-xu" target="_blank" rel="noopener noreferrer">Nagnip-xu</a> 开发</span><span class="credit-dot"></span><span>Python / Tkinter</span></div>
+      </div>
+      <div class="hero-art">
+        <svg class="hero-route" viewBox="0 0 650 580" fill="none" aria-hidden="true"><path class="route-outline" d="M18 142C18 66 152 42 295 42h231c71 0 98 35 98 103v275c0 95-80 119-174 119H170c-90 0-139-36-139-100"/><path class="route-moving" d="M18 142C18 66 152 42 295 42h231c71 0 98 35 98 103v275c0 95-80 119-174 119H170c-90 0-139-36-139-100"/></svg>
+        <div class="connection-chip"><span class="connection-dot"></span>桌面 × 浏览器<svg class="icon"><use href="#i-arrow"/></svg></div>
+        <button class="hero-window" type="button" data-lightbox="assets/app-overview.webp" data-caption="桌面控制窗口 · 用户提供的真实运行截图" aria-label="放大查看桌面控制窗口截图"><img src="assets/app-overview.webp" width="1065" height="889" alt="币安跟单抢位助手真实桌面窗口，展示参数、页面状态、提交控制和运行日志" fetchpriority="high"><span class="image-expand"><svg class="icon"><use href="#i-expand"/></svg></span></button>
+        <div class="art-caption"><span class="caption-tick"></span><span>一个窗口，连接完整工作流。</span><span class="caption-index">.py → web</span></div>
+      </div>
+      <div class="hero-bottom"><span>个人开发作品 / Desktop automation</span><a href="#showcase" aria-label="向下浏览作品"><svg class="icon"><use href="#i-arrow"/></svg></a></div>
+    </section>
+
+    <section class="showcase slab" id="showcase" aria-labelledby="showcase-title">
+      <div class="section-heading"><h2 id="showcase-title">看见状态，也掌握主动。</h2><div class="heading-aside"><p>目标、模式、响应与日志，<br>都放在一个看得见的地方。</p><span class="plain-tag">真实软件截图</span></div></div>
+      <div class="gallery-toolbar"><div class="gallery-tabs" role="tablist" aria-label="选择软件截图"><button id="tab-desktop" type="button" role="tab" aria-selected="true" aria-controls="gallery-panel" data-shot="desktop">桌面控制窗口</button><button id="tab-browser" type="button" role="tab" aria-selected="false" aria-controls="gallery-panel" tabindex="-1" data-shot="browser">浏览器联动</button></div><button class="text-action" type="button" id="gallery-expand">放大查看<svg class="icon"><use href="#i-expand"/></svg></button></div>
+      <figure class="gallery-figure" id="gallery-panel" role="tabpanel" aria-labelledby="tab-desktop" tabindex="0"><button type="button" class="gallery-image-button" id="gallery-image-button" aria-label="放大查看当前截图"><img id="gallery-image" src="assets/app-overview.webp" width="1065" height="889" alt="桌面控制窗口：上部设置目标，中部查看状态，下部控制任务和阅读日志" loading="lazy"></button><figcaption><span id="gallery-caption">桌面控制窗口：设置目标、查看页面响应、控制任务与阅读日志。</span><span id="gallery-count">1 / 2</span></figcaption></figure>
+      <p class="evidence-note">截图展示当时的运行状态；其中的金额、速率和「真实提交 ON」不代表首次运行默认值，也不构成推荐或成功证明。</p>
+      <div class="project-note"><h3>从反复查看，<br>到清晰地控制。</h3><div><p>这个项目把分散在浏览器里的重复操作，收拢到一个桌面窗口。浏览器负责承载页面与登录状态，桌面端负责参数、监控、控制和反馈。</p><p>它的重点，是让自动化过程有状态可看、有日志可查，也有明确的停止入口。</p><a class="inline-link" href="https://github.com/Nagnip-xu/binance-copy-slot-assistant#readme" target="_blank" rel="noopener noreferrer">阅读完整项目说明<svg class="icon"><use href="#i-external"/></svg></a></div></div>
+    </section>
+
+    <section class="mechanism slab" id="mechanism" aria-labelledby="mechanism-title">
+      <div class="section-heading"><h2 id="mechanism-title">一个窗口，<br>怎样和网页协作？</h2><p class="mechanism-intro">沿着这条线路点一点。<br>从启动到反馈，看懂每一步的职责。</p></div>
+      <div class="demo-toolbar"><span><span class="connection-dot"></span>交互演示 · 不连接真实账户</span><button class="demo-play" id="demo-play" type="button" aria-pressed="false"><svg class="icon"><use href="#i-play"/></svg><span>播放流程</span></button></div>
+      <div class="flow" role="tablist" aria-label="探索运行流程"><div class="flow-track" aria-hidden="true"><span id="flow-progress"></span></div><button type="button" class="flow-stop" id="flow-0" role="tab" aria-controls="flow-panel" aria-selected="true" data-step="0"><span class="flow-icon"><svg class="icon"><use href="#i-screen"/></svg></span><span>桌面窗口</span></button><button type="button" class="flow-stop" id="flow-1" role="tab" aria-controls="flow-panel" aria-selected="false" tabindex="-1" data-step="1"><span class="flow-icon"><svg class="icon"><use href="#i-browser"/></svg></span><span>连接浏览器</span></button><button type="button" class="flow-stop" id="flow-2" role="tab" aria-controls="flow-panel" aria-selected="false" tabindex="-1" data-step="2"><span class="flow-icon"><svg class="icon"><use href="#i-watch"/></svg></span><span>读取与监控</span></button><button type="button" class="flow-stop" id="flow-3" role="tab" aria-controls="flow-panel" aria-selected="false" tabindex="-1" data-step="3"><span class="flow-icon"><svg class="icon"><use href="#i-bell"/></svg></span><span>控制与反馈</span></button></div>
+      <div class="flow-panel" id="flow-panel" role="tabpanel" aria-labelledby="flow-0" tabindex="0"><div class="flow-explanation"><h3 id="step-title">先把任务交代清楚。</h3><p id="step-description">在桌面窗口填写交易员 ID、金额与速率，选择浏览器。ID 决定实际目标，名称用于展示。</p><div class="flow-controls"><button type="button" class="next-step" id="next-step">下一步<svg class="icon"><use href="#i-arrow"/></svg></button><span id="step-position">1 / 4</span></div></div><div class="demo-console"><div class="console-top"><span class="console-light"></span><span id="console-title">任务参数</span><span>示意数据</span></div><dl id="console-rows"><div><dt>目标</dt><dd>由你填写的交易员 ID</dd></div><div><dt>浏览器</dt><dd>Edge / Chrome</dd></div><div><dt>真实提交</dt><dd class="console-status">OFF · 首次运行默认</dd></div></dl><div class="console-bottom"><span class="console-pulse"></span><span id="console-footer">等待你在软件中点击「启动」</span></div></div></div>
+      <div class="demo-option"><label class="switch-label"><input id="submit-demo" type="checkbox"><span class="switch" aria-hidden="true"></span><span>演示「开启真实提交」的分支</span></label><p>仅改变此处的机制说明，不会发送请求。</p></div>
+      <p class="mechanism-note">真实软件通过本机 CDP 连接浏览器，复用网页登录态。提交依赖网页内部模块，页面更新后可能需要重新适配。</p>
+    </section>
+
+    <section class="engineering" aria-labelledby="engineering-title"><div><h2 id="engineering-title">界面之外，<br>把边界也写清楚。</h2><p>一个个人工程作品，既有实现选择，<br>也有需要诚实面对的限制。</p></div><div class="engineering-list"><article><span class="engineering-symbol">UI</span><div><h3>桌面端负责可控</h3><p>Python / Tkinter 汇集参数、状态与日志；本地保存设置，保留启动、停止和浏览器管理入口。</p></div></article><article><svg class="icon engineering-symbol"><use href="#i-browser"/></svg><div><h3>浏览器承载真实页面</h3><p>通过本机调试协议协作，无需填写 API Key；需要在软件打开的独立浏览器中登录。</p></div></article><article><svg class="icon engineering-symbol"><use href="#i-watch"/></svg><div><h3>自动化有明确边界</h3><p>网页变化、登录失效和限流都会影响运行。目前没有完整的故障恢复，长期无人值守仍需补齐能力。</p></div></article></div></section>
+
+    <section class="start slab" id="start" aria-labelledby="start-title"><div class="section-heading"><h2 id="start-title">想在自己的电脑上<br>运行起来？</h2><div class="heading-aside"><p>Windows 10 / 11 · x64<br>推荐 Edge 或 Chrome 浏览器</p><span class="plain-tag">完整项目附带 Python 运行库</span></div></div><ol class="start-steps"><li><span class="step-number">1</span><div><h3>完整下载，然后解压</h3><p>保留项目里的 <code>py</code> 文件夹及目录结构，不要直接在压缩包中启动。</p><a class="inline-link" href="https://github.com/Nagnip-xu/binance-copy-slot-assistant/archive/refs/heads/main.zip">下载完整项目 ZIP<svg class="icon"><use href="#i-download"/></svg></a></div></li><li><span class="step-number">2</span><div><h3>双击这个文件就好</h3><p>日常使用从 <code>START.cmd</code> 启动。脚本会调用主程序，不需要逐个运行 Python 文件。</p><button class="file-copy" id="copy-start" type="button" aria-label="复制启动文件名 START.cmd"><svg class="icon"><use href="#i-play"/></svg><code>START.cmd</code><span>复制文件名</span><svg class="icon copy-icon"><use href="#i-copy"/></svg></button></div></li><li><span class="step-number">3</span><div><h3>先检查，再开始监控</h3><p>确认「真实提交 OFF」，填写并核对目标。在软件打开的浏览器里核实页面来源、完成登录，再观察状态。</p><a class="inline-link" href="https://github.com/Nagnip-xu/binance-copy-slot-assistant#快速开始" target="_blank" rel="noopener noreferrer">查看详细使用方法<svg class="icon"><use href="#i-external"/></svg></a></div></li></ol>
+      <div class="faq" aria-label="使用前常见问题"><details><summary>需要开启真实提交吗？<svg class="icon"><use href="#i-plus"/></svg></summary><div><p>可以先只监控。首次运行默认关闭真实提交和自动启动；后续开关会保存在本地，每次使用都应检查当前模式。真实提交会使用登录账户发起跟单申请，可能转入 USDT 并带来合约风险。项目不保证取得名额或收益。</p></div></details><details><summary>可以放到云端一直运行吗？<svg class="icon"><use href="#i-plus"/></svg></summary><div><p>当前版本适合带图形桌面的 Windows 云服务器或云电脑，需要安装浏览器并重新登录。远程桌面断开后的会话保留取决于服务器策略。登录过期、浏览器恢复、错误退避和远程告警尚不完整，持续无人值守前应先验证并完善这些能力。</p></div></details><details><summary>启动异常，或者页面一直报错怎么办？<svg class="icon"><use href="#i-plus"/></svg></summary><div><p>启动异常可使用「启动-调试模式.bat」查看错误。页面持续报错时，先停止尝试，检查网络、登录状态和平台提示。网页内部模块变化需要重新适配；「项目已满」只是页面响应，并不表示已经成功。</p></div></details><details><summary>这是币安官方项目吗？<svg class="icon"><use href="#i-plus"/></svg></summary><div><p>这是独立的个人开发作品，与币安官方没有隶属或背书关系。当前软件入口域名及其跳转来源尚未核验，输入登录凭证前请自行确认实际页面可信。源码和完整限制说明均可在 GitHub 查看。</p></div></details></div>
+    </section>
+
+    <footer class="site-footer"><div class="footer-top"><h2>作品继续生长，<br>代码始终可见。</h2><a class="button button-ink" href="https://github.com/Nagnip-xu/binance-copy-slot-assistant" target="_blank" rel="noopener noreferrer">去 GitHub 看看<span class="button-orb"><svg class="icon"><use href="#i-external"/></svg></span></a></div><div class="footer-bottom"><a class="footer-author" href="https://github.com/Nagnip-xu" target="_blank" rel="noopener noreferrer">Nagnip-xu<span>个人开发作品</span></a><p>独立桌面自动化项目 · 无官方隶属关系</p><a href="#main" class="back-top">回到顶部<svg class="icon"><use href="#i-arrow"/></svg></a></div></footer>
+  </main>
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lightbox-caption"><div class="lightbox-toolbar"><p id="lightbox-caption"></p><button class="close-lightbox" type="button" aria-label="关闭截图"><svg class="icon"><use href="#i-close"/></svg></button></div><div class="lightbox-image-wrap"><img id="lightbox-image" src="assets/app-overview.webp" alt=""></div><p class="lightbox-hint">按 Esc 或点击背景关闭</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
